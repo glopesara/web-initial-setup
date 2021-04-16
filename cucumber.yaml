@@ -1,0 +1,8 @@
+---
+default: --publish-quiet -p bdd -p chrome
+bdd: -f pretty
+dots: -f progress
+firefox: BROWSER=firefox
+fire_headless: BROWSER=fire_headless
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless
