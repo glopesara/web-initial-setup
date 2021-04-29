@@ -3,6 +3,7 @@ require "Capybara/cucumber"
 require "cpf_cnpj"
 require "faker"
 require_relative "helper"
+require "allure-cucumber"
 World(Helper)
 
 #variaveis de browser
@@ -23,4 +24,13 @@ Capybara.configure do |config|
   config.default_driver = @driver
   config.app_host = "https://www.cobasi.com.br/"
   Capybara.default_max_wait_time = 5
+end
+
+#bloco de configuração do alurre
+AllureCucumber.configure do |config|
+  #colocando no diretorio logs
+  config.results_directory = "/logs"
+  #sempre que o cucumber fizer uma nova execução vai limpa o logs
+  config.clean_results_directory = true
+  config.logging_level = Logger::INFO
 end

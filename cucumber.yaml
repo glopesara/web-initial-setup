@@ -1,8 +1,9 @@
 ---
-default: --publish-quiet -p bdd -p chrome
+default: --publish-quiet -p bdd -p chrome -p allure
 bdd: -f pretty
 dots: -f progress
 firefox: BROWSER=firefox
+allure: --format AllureCucumber::CucumberFormatter --out=logs
 fire_headless: BROWSER=fire_headless
 chrome: BROWSER=chrome
 chrome_headless: BROWSER=chrome_headless

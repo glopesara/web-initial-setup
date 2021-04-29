@@ -7,6 +7,8 @@ gem 'cucumber', '5.2'
 gem 'rspec', '3.10'
 gem 'selenium-webdriver', '3.142.7'
 
+gem 'allure-cucumber', '2.13.6.4'
+
 # gems para dados fakes
 gem 'cpf_cnpj', '0.5.0'
 gem 'faker', '2.17'
