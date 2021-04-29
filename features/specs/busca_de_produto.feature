@@ -7,11 +7,11 @@ Funcionalidade: Busca de produto
             E na tela de detalhes do produto clico em comprar
             E clico em continuar comprando
         Então meu carrinho deve estar com um produto
-@temp
+
     Cenario: Realizar uma busca e clicar em Finalizar compra
         Dado que eu faça a busca do seguinte produto
             | nome | ração cachorro |
             E clico em algum produto
             E na tela de detalhes do produto clico em comprar
-            E clico em finalizar compra
+            E no modal clico em finalizar compra
         Então devo ser redirecionado para checkout

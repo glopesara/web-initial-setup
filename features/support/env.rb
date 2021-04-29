@@ -1,5 +1,7 @@
 require "Capybara"
 require "Capybara/cucumber"
+require "cpf_cnpj"
+require "faker"
 require_relative "helper"
 World(Helper)
 

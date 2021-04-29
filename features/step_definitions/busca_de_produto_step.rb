@@ -15,11 +15,11 @@ Dado("clico em algum produto") do
 end
 
 Dado("na tela de detalhes do produto clico em comprar") do
-  @tela_produto.comprar()
+  @detalhes_produto.comprar()
 end
 
 Dado("clico em continuar comprando") do
-  @tela_produto.continuar_compando()
+  @detalhes_produto.continuar_compando()
   # expect(page.has_css?(".modal.fade.modal-cart.show")).to be true
 end
 
@@ -28,8 +28,8 @@ Então("meu carrinho deve estar com um produto") do
   expect(resultado).to eql "1"
 end
 
-Dado("clico em finalizar compra") do
-  @tela_produto.finalizar_compra()
+Dado("no modal clico em finalizar compra") do
+  @detalhes_produto.modal_finalizar_compra()
 end
 
 Então("devo ser redirecionado para checkout") do

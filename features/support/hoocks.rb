@@ -1,7 +1,9 @@
 Before do
   @motor_busca = MotorBusca.new
   @tela_resultado = BuscaDeProdutos.new
-  @tela_produto = DetalhesProduto.new
+  @detalhes_produto = DetalhesProduto.new
+  @cadastro = CadastroUsuario.new
+  @checkout = Checkout.new
   page.current_window.resize_to(1440, 900)
 end
 

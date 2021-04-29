@@ -9,7 +9,11 @@ class DetalhesProduto
     click_link "Continuar Comprando"
   end
 
-  def finalizar_compra()
+  def modal_finalizar_compra()
     click_link "Finalizar Compra"
+  end
+
+  def finalizar_compra()
+    click_on "Finalizar compra"
   end
 end
