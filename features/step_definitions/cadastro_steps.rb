@@ -1,7 +1,14 @@
-Dado("que eu acesse a tela de cadastro com Email e senha") do
-  @cadastro.pagina_cadastro_email
+Dado("que eu acesse a tela de login") do
+  @tela_login.acessar_tela()
 end
 
+Dado("selecione a opção com email e senha") do
+  @tela_login.selecao_de_login("email")
+end
+
+Dado("click em não tem uma senha") do
+  @tela_login.clicar_sem_senha()
+end
 Dado("submeta o formulario com") do |table|
   @usuario = table.hashes.first
   @cadastro.criar_usuario(@usuario)

@@ -2,7 +2,9 @@
 Funcionalidade: Cadastro
     @senha
     Esquema do Cenario: Tentativa de cadastro
-        Dado que eu acesse a tela de cadastro com Email e senha
+        Dado que eu acesse a tela de login 
+            E selecione a opção com email e senha
+            E click em não tem uma senha
             E submeta o formulario com
             | email         | senha         | senhaconfirma         | id_mensagem   |
             | <email_imput> | <senha_imput> | <senhaconfirma_imput> | <id_mensagem> |
@@ -14,7 +16,9 @@ Funcionalidade: Cadastro
             | teste@teste.com | teste       |                     | Preencha este campo. | #inputConfirmNewPassword |
             | teste@teste.com |             | teste               | Preencha este campo. | #inputNewPassword        |
     Esquema do Cenario: Tentativa de cadastro senhas não iguais
-        Dado que eu acesse a tela de cadastro com Email e senha
+        Dado que eu acesse a tela de login 
+            E selecione a opção com email e senha
+            E click em não tem uma senha
             E submeta o formulario com
             | email         | senha         | senhaconfirma         | id_mensagem   |
             | <email_imput> | <senha_imput> | <senhaconfirma_imput> | <id_mensagem> |
@@ -25,7 +29,9 @@ Funcionalidade: Cadastro
             | teste@teste.com | tesssst     | teste               | As senhas não são iguais | p[ng-show='dontMatchPswd'] |
     @cadastro
     Cenario: Validações de sua senha deve ter
-        Dado que eu acesse a tela de cadastro com Email e senha
+        Dado que eu acesse a tela de login 
+            E selecione a opção com email e senha
+            E click em não tem uma senha
             E submeta o formulario com
             | email           | senha | senhaconfirma | find                                               |
             | teste@teste.com | teste | teste         | span[ng-show='passwordHasLowerCaseLetter'].ng-hide |
