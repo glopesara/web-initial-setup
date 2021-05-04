@@ -5,7 +5,7 @@ Funcionalidade: Cadastro
         Dado que eu acesse a tela de login 
             E selecione a opção com email e senha
             E click em não tem uma senha
-            E submeta o formulario com
+            E submeta o formulario de cadastro com
             | email         | senha         | senhaconfirma         | id_mensagem   |
             | <email_imput> | <senha_imput> | <senhaconfirma_imput> | <id_mensagem> |
         Então devo ver a "<mensagem_output>"
@@ -19,7 +19,7 @@ Funcionalidade: Cadastro
         Dado que eu acesse a tela de login 
             E selecione a opção com email e senha
             E click em não tem uma senha
-            E submeta o formulario com
+            E submeta o formulario de cadastro com
             | email         | senha         | senhaconfirma         | id_mensagem   |
             | <email_imput> | <senha_imput> | <senhaconfirma_imput> | <id_mensagem> |
         Então devo ver a "<mensagem_output>" de senhas não iguais
@@ -32,7 +32,7 @@ Funcionalidade: Cadastro
         Dado que eu acesse a tela de login 
             E selecione a opção com email e senha
             E click em não tem uma senha
-            E submeta o formulario com
+            E submeta o formulario de cadastro com
             | email           | senha | senhaconfirma | find                                               |
             | teste@teste.com | teste | teste         | span[ng-show='passwordHasLowerCaseLetter'].ng-hide |
         Então devo ver o chek

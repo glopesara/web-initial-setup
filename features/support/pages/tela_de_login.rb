@@ -14,6 +14,12 @@ class TelaDeLogin
     end
   end
 
+  def logar(usuario)
+    find("#inputEmail").set usuario[:email]
+    find("#inputPassword").set usuario[:senha]
+    click_button "Entrar"
+  end
+
   def clicar_sem_senha
     click_link "Não tem uma senha? Cadastre agora"
   end

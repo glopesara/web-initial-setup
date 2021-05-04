@@ -20,6 +20,7 @@ else
   raise "navegador incorreto"
 end
 
+#bloco de configuração do Capybara
 Capybara.configure do |config|
   config.default_driver = @driver
   config.app_host = "https://www.cobasi.com.br/"

@@ -13,5 +13,4 @@ Dado("submeto o formulario de Endereço") do
 end
 Dado("submeta o formulario de cartão de credito") do
   @checkout.form_cartao()
-  sleep 5
 end
