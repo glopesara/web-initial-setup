@@ -1,7 +1,5 @@
 require "Capybara"
 require "Capybara/cucumber"
-require "cpf_cnpj"
-require "faker"
 require_relative "helper"
 require "allure-cucumber"
 World(Helper)
@@ -23,7 +21,7 @@ end
 #bloco de configuração do Capybara
 Capybara.configure do |config|
   config.default_driver = @driver
-  config.app_host = "https://www.cobasi.com.br/"
+  config.app_host = "https://www.cobasi.com.br"
   Capybara.default_max_wait_time = 5
 end
 

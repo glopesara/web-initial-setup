@@ -1,2 +1,4 @@
 resultados/
 logs/
+Gemfile.lock
+*.lock
