@@ -13,7 +13,7 @@ when "fire_headless"
 when "chrome"
   @driver = :selenium_chrome
 when "chrome_headless"
-  @driver == :selenium_chrome_headless
+  @driver = :selenium_chrome_headless
 else
   raise "navegador incorreto"
 end
