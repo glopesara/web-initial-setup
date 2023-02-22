@@ -2,12 +2,12 @@
 
 source 'https://rubygems.org'
 
-gem 'capybara', '3.33'
-gem 'cucumber', '5.2'
-gem 'rspec', '3.10'
-gem 'selenium-webdriver', '3.142.7'
+gem 'capybara', 
+gem 'cucumber',
+gem 'rspec', 
+gem 'selenium-webdriver', 
 
-gem 'allure-cucumber', '2.13.6.4'
+gem 'allure-cucumber',
 
 # gems para dados fakes
 gem 'cpf_cnpj', '0.5.0'
